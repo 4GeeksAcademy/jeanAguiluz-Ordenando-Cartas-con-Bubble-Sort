@@ -1,5 +1,64 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background-color: rgb(26, 161, 73);
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cards,
+.log-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    width: 60px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-size: 16px;
+    position: relative;
+}
+
+.red {
+    color: red;
+}
+
+.suit-top {
+    align-self: flex-start;
+}
+
+.value {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.suit-bottom {
+    align-self: flex-end;
+    transform: rotate(180deg);
 }
